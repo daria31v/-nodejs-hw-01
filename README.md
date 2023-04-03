@@ -13,7 +13,7 @@ https://monosnap.com/file/P3spUhIUfqwP3Fz65e9UbUyWSpRpqt
 # Додаємо контакт
 node index.js --action="add" --name Mango --email mango@gmail.com --phone 322-22-22
 
-https://monosnap.com/file/W67r4QzrUFB4zjZywpk5MCnapWZteA
+https://monosnap.com/file/5av1fw1FFACUdJ9UVviHZOExTV99er
 
 # Видаляємо контакт
 node index.js --action="remove" --id qdggE76Jtbfd9eWJHrssH
