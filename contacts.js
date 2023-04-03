@@ -57,7 +57,7 @@ async function addContact(name, email, phone) {
   const newContact = { id: nanoid(21), name, email, phone };
   contacts.push(newContact);
   await updateContacts(contacts);
-  return newContact + console.log(chalk.bgBlueBright(`Contact was added!`));
+  return newContact && console.log(chalk.bgBlueBright(`Contact was added!`));
 }
 
 module.exports = {
