@@ -1,23 +1,27 @@
-// index.js
 const argv = require("yargs").argv;
+const {
+  listContacts,
+  getContactById,
+  removeContact,
+  addContact,
+} = require("./contacts");
 
-// TODO: рефакторить
 function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":
-      // ...
+      listContacts(action);
       break;
 
     case "get":
-      // ... id
+      getContactById(id);
       break;
 
     case "add":
-      // ... name email phone
+      addContact(name, email, phone);
       break;
 
     case "remove":
-      // ... id
+      removeContact(id);
       break;
 
     default:
