@@ -6,10 +6,11 @@ const {
   addContact,
 } = require("./contacts");
 
-function invokeAction({ action, id, name, email, phone }) {
+async function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":
-      listContacts(action);
+      const allContacts = await listContacts(action);
+      console.table(allContacts)
       break;
 
     case "get":

@@ -8,7 +8,7 @@ console.log(contactsPath);
 
 async function readAllContacts() {
   const data = await fs.readFile(contactsPath, "utf8");
-  return JSON.parse(data) + console.table(JSON.parse(data));
+  return JSON.parse(data);
 }
 
 function updateContacts(contacts) {
